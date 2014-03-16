@@ -1,0 +1,20 @@
+package utility;
+
+public class Point {
+    public final int x;
+    public final int y;
+    
+    public Point(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+    
+    @Override
+    public String toString(){
+        return x + " " + y;
+    }
+
+    public boolean equals(Point o) {
+        return x == o.x && y == o.y;
+    }
+}
